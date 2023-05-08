@@ -1,0 +1,114 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Applies to whole page */
+body{
+    align-items: center;
+    background: linear-gradient(320deg, #000000, #c56655, #ffffff);
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+/* Applies to the wrapper div, creates the backdrop of the calculator */
+.wrapper{
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(200,200,200,0.30);
+    border: 1px solid rgba(200,200,200,0.35);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+/* Answer screen formatting */
+.screen{
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: rgba(200,200,200,0.75);
+    border: 1px solid rgba(200,200,200,0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+
+/* Applies to each row of buttons */
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+/* Applies to each button */
+.calc-button{
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background:rgba(200,200,200,0.75);
+    border: 1px solid rgba(200,200,200,0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+/* Applies to each last button */
+.calc-button:last-child{
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background:rgba(200,200,200,0.75);
+    border: 1px solid rgba(200,200,200,0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+    color: #fff;
+    background: #414141;
+}
+/* Applies to each last button when hovered */
+.calc-button:last-child:hover{
+    background-color: inherit;
+    color: inherit;
+}
+
+/* Applies to each button when hovered */
+.calc-button:hover{
+    background-color: inherit;
+}
+
+/* Applies to each button on click */
+.calc-button:active{
+    background-color: #000000;
+}
+
+/* Applies to the C button */
+.double{
+    flex-basis: 47%;
+}
+
+/* Applies to the 0 button */
+.triple{
+    flex-basis: 73%;
+}
